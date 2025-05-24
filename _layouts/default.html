@@ -9,22 +9,44 @@
   </head>
   <body class="bg-white text-gray-800 font-sans leading-relaxed">
 
-    <!-- Header -->
+    <!-- Menu -->
     <nav class="bg-white border-b border-gray-200 shadow-sm">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16 items-center">
+          <!-- Logo / Site Name -->
           <div class="flex-shrink-0 text-2xl font-bold text-yellow-700">
             Readable Languages
           </div>
-          <div class="space-x-6">
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-6">
             <a href="/" class="text-gray-700 hover:text-yellow-700 font-medium">Home</a>
             <a href="/books.html" class="text-gray-700 hover:text-yellow-700 font-medium">Books</a>
             <a href="/about.html" class="text-gray-700 hover:text-yellow-700 font-medium">About</a>
             <a href="/contact.html" class="text-gray-700 hover:text-yellow-700 font-medium">Contact</a>
           </div>
+
+          <!-- Mobile Toggle -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-gray-700 hover:text-yellow-700 focus:outline-none">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
+
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+        <a href="/" class="block text-gray-700 hover:text-yellow-700 font-medium">Home</a>
+        <a href="/books.html" class="block text-gray-700 hover:text-yellow-700 font-medium">Books</a>
+        <a href="/about.html" class="block text-gray-700 hover:text-yellow-700 font-medium">About</a>
+        <a href="/contact.html" class="block text-gray-700 hover:text-yellow-700 font-medium">Contact</a>
+      </div>
     </nav>
+
 
     <!-- Main content -->
     <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -36,5 +58,12 @@
       &copy; 2025 Readable Languages — All rights reserved.
     </footer>
 
+    <script>
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>
