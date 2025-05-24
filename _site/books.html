@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Books</title>
-  <link rel="stylesheet" href="/assets/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <nav>
-    <a href="/">Home</a> |
-    <a href="/books.html">Books</a> |
-    <a href="/about.html">About</a>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-indigo-600">Readable Languages</div>
+      <div class="space-x-4">
+        <a href="/" class="text-gray-700 hover:text-indigo-600 font-medium">Home</a>
+        <a href="/books.html" class="text-gray-700 hover:text-indigo-600 font-medium">Books</a>
+        <a href="/about.html" class="text-gray-700 hover:text-indigo-600 font-medium">About</a>
+      </div>
+    </div>
   </nav>
-  <main>
-    <h1 id="our-books">Our Books</h1>
 
-<p>Here you’ll find a list of our published books and links to their audiobooks.</p>
+  <!-- Main Content -->
+  <main class="flex-grow px-4 py-8 max-w-4xl mx-auto">
+    <div class="max-w-3xl mx-auto px-4 py-12">
+  <h1 class="text-4xl md:text-5xl font-bold text-indigo-600 mb-6">Our Books</h1>
 
-<ul>
-  <li><a href="/audiobooks/dracula.html">Dracula Audiobook</a></li>
-</ul>
+  <p class="text-lg text-gray-700 mb-8">
+    Here you’ll find a list of our published books and links to their audiobooks.
+  </p>
+
+  <ul class="space-y-4">
+    <li>
+      <a href="/audiobooks/dracula.html" class="block p-4 rounded-lg border border-gray-200 shadow-sm hover:shadow-md hover:bg-indigo-50 transition">
+        <span class="text-xl font-semibold text-indigo-700">Dracula (Hebrew Audiobook)</span>
+        <p class="text-gray-600">Listen to the classic tale adapted for Hebrew learners, complete with audio tracks.</p>
+      </a>
+    </li>
+    <!-- You can add more books here in the same format -->
+  </ul>
+</div>
 
   </main>
-  <footer>
-    <p>&copy; 2025 Readable Languages</p>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-inner py-4">
+    <div class="max-w-7xl mx-auto px-4 text-center text-sm text-gray-500">
+      &copy; 2025 Readable Languages. All rights reserved.
+    </div>
   </footer>
+
 </body>
 </html>

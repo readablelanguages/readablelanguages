@@ -1,24 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>About</title>
-  <link rel="stylesheet" href="/assets/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <nav>
-    <a href="/">Home</a> |
-    <a href="/books.html">Books</a> |
-    <a href="/about.html">About</a>
-  </nav>
-  <main>
-    <h1 id="about-us">About Us</h1>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
 
-<p>Readable Languages is a small publishing house offering simplified books and free audiobooks for language learners.</p>
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-indigo-600">Readable Languages</div>
+      <div class="space-x-4">
+        <a href="/" class="text-gray-700 hover:text-indigo-600 font-medium">Home</a>
+        <a href="/books.html" class="text-gray-700 hover:text-indigo-600 font-medium">Books</a>
+        <a href="/about.html" class="text-gray-700 hover:text-indigo-600 font-medium">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow px-4 py-8 max-w-4xl mx-auto">
+    <div class="max-w-3xl mx-auto px-4 py-12">
+  <h1 class="text-4xl md:text-5xl font-bold text-indigo-600 mb-6">About Us</h1>
+
+  <p class="text-lg text-gray-700 leading-relaxed">
+    <strong>Readable Languages</strong> is a small publishing house dedicated to helping language learners.
+    We create <em>simplified books</em> paired with <em>free audiobooks</em> to make language acquisition
+    both effective and enjoyable.
+  </p>
+</div>
 
   </main>
-  <footer>
-    <p>&copy; 2025 Readable Languages</p>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-inner py-4">
+    <div class="max-w-7xl mx-auto px-4 text-center text-sm text-gray-500">
+      &copy; 2025 Readable Languages. All rights reserved.
+    </div>
   </footer>
+
 </body>
 </html>
