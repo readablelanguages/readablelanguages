@@ -1,7 +1,10 @@
 ---
 layout: default
-title: Home
+title: Readable Languages
 ---
 
-<h1>Welcome to Readable Languages</h1>
-<p>This site is under construction. Soon you'll find free audiobooks for all our publications!</p>
+# Welcome to Readable Languages
+
+We're building a collection of books with free audiobooks for language learners.
+
+Stay tuned!
