@@ -9,7 +9,7 @@ title: Dracula Audiobook
 
 {% for chapter in chapters %}
 <audio id="audio-{{ chapter }}" controls preload="auto">
-  <source src="/audio/dracula/DR {{ chapter }}.mp3" type="audio/mpeg">
+  <source src="/audio/dracula/Dr {{ chapter }}.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio><br>
 {% endfor %}
