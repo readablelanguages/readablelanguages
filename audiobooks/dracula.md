@@ -27,6 +27,12 @@ title: Dracula Audiobook
         <option value="es">Amazon Spain</option>
         <option value="com.br">Amazon Brazil</option>
         <option value="pl">Amazon Poland</option>
+        <option value="nl">Amazon Netherlands</option>
+        <option value="se">Amazon Sweden</option>
+        <option value="com.au">Amazon Australia</option>
+        <option value="com.mx">Amazon Mexico</option>
+        <option value="sg">Amazon Singapore</option>
+        <option value="com.tr">Amazon Turkey</option>
       </select>
       <a id="amazon-link" href="https://www.amazon.com/dp/B0F8J7T6RK" target="_blank"
          class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded shadow">
