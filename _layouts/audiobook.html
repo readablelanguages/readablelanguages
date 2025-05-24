@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+{% assign chapter_labels = 
+  "Hebrew:פרק,German:Kapitel,English:Chapter,French:Chapitre,Spanish:Capítulo,Italian:Capitolo,Polish:Rozdział" | split: "," %}
+{% assign chapter_label = "Chapter" %}
+{% for item in chapter_labels %}
+  {% assign parts = item | split: ":" %}
+  {% if parts[0] == page.language %}
+    {% assign chapter_label = parts[1] %}
+  {% endif %}
+{% endfor %}
 
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
   <h1 class="text-4xl font-extrabold text-yellow-700 mb-3">
@@ -47,7 +56,10 @@ layout: default
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
     {% for chapter in chapters %}
     <div class="bg-gray-50 border border-gray-200 p-5 rounded-lg shadow hover:shadow-md transition">
-        <p class="text-sm text-gray-600 font-medium mb-2">Chapter {{ chapter | replace: "_", "." }}</p>
+        <p 
+            class="text-sm text-gray-600 font-medium mb-2 {% if page.language == 'Hebrew' %}text-right{% else %}text-left{% endif %}">
+            {{ chapter_label }} {{ chapter | replace: "_", "." }}
+        </p>
         <audio controls preload="auto" class="w-full rounded">
         <source src="{{ page.audio_folder }}/Dr {{ chapter }}.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
