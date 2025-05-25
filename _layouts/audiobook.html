@@ -91,3 +91,17 @@ layout: default
     });
   });
 </script>
+
+<script>
+  if ('mediaSession' in navigator) {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: '{{ page.title }}',
+      artist: 'Readable Languges',
+      album: 'Readable Hebrew Audiobooks - Dracula',
+      artwork: [
+        { src: '{{ page.cover_image_full }}', sizes: '348x522', type: 'image/jpeg' },
+        { src: '{{ page.cover_image_full }}', sizes: '512x512', type: 'image/jpeg' }
+      ]
+    });
+  }
+</script>

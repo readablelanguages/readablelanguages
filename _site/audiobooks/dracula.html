@@ -356,6 +356,20 @@
   });
 </script>
 
+<script>
+  if ('mediaSession' in navigator) {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: 'Dracula Audiobook',
+      artist: 'Readable Languges',
+      album: 'Readable Hebrew Audiobooks - Dracula',
+      artwork: [
+        { src: '/assets/images/dracula_cover.jpg', sizes: '348x522', type: 'image/jpeg' },
+        { src: '/assets/images/dracula_cover.jpg', sizes: '512x512', type: 'image/jpeg' }
+      ]
+    });
+  }
+</script>
+
     </main>
 
     <!-- Footer -->
