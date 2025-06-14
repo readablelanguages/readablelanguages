@@ -7,7 +7,7 @@ title: Readable Languages
   <h1 class="text-4xl font-bold mb-4 text-yellow-700">Welcome to Readable Languages</h1>
   
   <p class="text-lg mb-4">
-    We publish beautifully designed, carefully adapted books for adult language learners — always accompanied by <strong>free audiobooks</strong>. 
+    We publish beautifully designed, carefully adapted books for adult language learners — always accompanied by <strong>audiobooks</strong>. 
   </p>
 
   <p class="text-lg mb-8">
