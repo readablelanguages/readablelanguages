@@ -6,7 +6,7 @@ title: About
 <h1 class="text-3xl font-bold mb-6 text-yellow-700">About Us</h1>
 
 <p class="text-lg leading-relaxed mb-4">
-  Readable Languages is a small, independent publishing house dedicated to helping adult language learners enjoy reading and listening in their target language. We create high-quality, simplified adaptations of classic literature — paired with free audiobooks — for learners who want more than just textbooks or teen fiction.
+  Readable Languages is a small, independent publishing house dedicated to helping adult language learners enjoy reading and listening in their target language. We create high-quality, simplified adaptations of classic literature — paired with audiobooks — for learners who want more than just textbooks or teen fiction.
 </p>
 
 <p class="text-lg leading-relaxed mb-4">
